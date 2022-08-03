@@ -1,0 +1,286 @@
+header {
+    background-color: #9B8461;
+    height: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+header ul {
+    display: inline-block;
+}
+header nav ul li a {
+    padding: 5px;
+    color: white;
+    font-size: 25px;
+    text-decoration: none;
+}
+header nav ul li {
+    display: inline;
+}
+.logo {
+    padding: 20px;
+    float: left;
+}
+.name {
+    color: white;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+.nav-links li {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+}
+.hero {
+    height: 30%;
+    background-color: #030303;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.content {
+    max-width: 1300px;
+    margin: 0 auto;
+    color: white;
+    display: grid;
+    grid-template-areas:
+        "heroPic heroText"
+        "heroPic resumeButton"
+    ;
+    grid-template-columns: 1fr, 1fr;
+    padding: 100px;
+    column-gap: 75px;
+}
+.heroPic {
+    border-radius: 100%;
+    grid-area: heroPic;
+    height: auto;
+    width: 100%;
+}
+.heroText {
+    font-size: 50px;
+    grid-area: heroText;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+.resumeButton {    
+    width: fit-content;
+    grid-area: resumeButton;
+}
+.btn-primary {
+    background-color: #37C0A6; 
+    color: white;
+    font-family: "Prata";
+    border: none;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 15px;
+    height: 50px;
+    font-size: 20px;
+}
+.btn-primary:hover {
+    background-color: #1a9a82; 
+    cursor: pointer;
+}
+.section {
+    padding: 50px 100px 50px 100px;
+}
+.skillsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.skillsCard {
+    height: 600px;
+    width: 400px;
+    padding: 25px;
+}
+.skillsImg {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.projectsContainer {
+    display: grid;
+    grid-template-areas: 
+        "wildHeartImg wildHeartContent"
+        "usdaContent usdaImg"
+        "streamersImg streamersContent"
+    ;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    align-items: center;
+    padding: 25px;
+    column-gap: 50px;
+    row-gap: 200px;
+}
+.wildHeartImg {
+    grid-area: wildHeartImg;
+}
+.wildHeartcontent {
+    grid-area: wildHeartContent;
+}
+.usdaImg {
+    grid-area: usdaImg;
+}
+.usdaContent {
+    grid-area: usdaContent;
+}
+.streamersImg {
+    grid-area: streamersImg;
+}
+.streamersContent {
+    grid-area: streamersContent;
+}
+.projectsCard {
+    height: 800px;
+    width: 1200px;
+    padding: 25px;
+}
+.projectsImg {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    padding-right: 100px;
+}
+footer {
+    background-color: #9B8461;
+}
+footer ul {
+    display: inline-block;
+    vertical-align: top;
+}
+footer li {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
+    display: inline;
+}
+footer ul li a {
+    text-decoration: none;
+    color: white;
+}
+body {
+    margin: 0 auto;
+    font-family: 'Prata';
+}
+h1 {
+    font-size: 50px;
+    padding-left: 50px;
+}
+h2 {
+    font-size: 39px;
+}
+h3 {
+    font-size: 31px;
+}
+h4 {
+    font-size: 23px;
+}
+p {
+    font-size: 17px;
+    font-family: 'Avenir';
+}
+@media only screen and (max-width: 320px) {
+    h1 {
+        font-size: 38px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3 {
+        font-size: 25px;
+    }
+    h4 {
+        font-size: 19px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .heroPic {
+        height: 300px;
+        width: fit-content;
+    }
+}
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 41px;
+    }
+    h2 {
+        font-size: 34px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 21px;
+    }
+    p {
+        font-size: 17px;
+    }
+    .content {
+        grid-template-areas:
+        "heroPic"
+        "heroText"
+        "resumeButton"
+    ;
+    }
+    .heroPic {
+        height: 500px;
+        width: fit-content;
+    }
+    .hero {
+        height: auto;
+    }
+    .projectsContainer {
+        grid-template-areas: 
+        "wildHeartImg"
+        "wildHeartContent"
+        "usdaContent"
+        "usdaImg"
+        "streamersImg"
+        "streamersContent"
+        ;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+    }
+    .section {
+        padding: 50px 25px 50px 25px;
+    }
+    .resumeButton {
+        width: 200px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .heroPic {
+        height: 700px;
+        width: fit-content;
+    }
+}
+.jumbotron {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: #E6DDD2;
+    display: flex;
+}
+.jumbotronImg {
+    height: auto;
+    width: 60%;
+}
+.jumbotron h1 {
+    margin-top: 50px;
+    width: 60%;
+    display: block;
+}
+.jumbotron p {
+    margin: 50px 50px 0px 50px;
+    width: 80%;
+    display: block;
+    justify-content: center;
+}

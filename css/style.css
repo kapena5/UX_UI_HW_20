@@ -315,3 +315,37 @@ hr {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
+.conclusionSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.whsSite {
+    height: 1000px;
+    width: auto;
+    padding: 20px;
+}
+.sectionText {
+    padding: 20px;
+}
+.storyboardSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+.whsStoryboardImg {
+    height: 500px;
+    width: auto;
+    padding: 20px;
+}
+.testingSection {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}

@@ -284,3 +284,34 @@ p {
     display: block;
     justify-content: center;
 }
+hr {
+    margin: 60px;
+    border-bottom: 3px solid rgb(24, 24, 24);
+}
+.btn-link {
+    color: white;
+    border: none;
+    text-decoration: none;
+}
+.btn-link:enabled {
+    text-decoration: none;
+}
+.btn-link:hover {
+    color: #2C333D;
+    text-decoration: none;
+}
+.card-header {
+    background-color: #1a9a82;
+    border-bottom: 5px;
+}
+#headingOne {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.card {
+    border: none;
+}
+#headingThree {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}

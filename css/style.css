@@ -280,7 +280,7 @@ p {
     display: block;
 }
 .jumbotron p {
-    margin: 50px 50px 0px 50px;
+    margin: 50px 50px 0px 30%;
     width: 80%;
     display: block;
     justify-content: center;
@@ -306,15 +306,24 @@ hr {
     border-bottom: 5px;
 }
 #headingOne {
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
+    /* border-top-left-radius: 15px;
+    border-top-right-radius: 15px; */
 }
 .card {
     border: none;
+    width: 100%;
+}
+.card-body {
+    background-color: #f3f3f3;
+    font-family: 'Avenir';
 }
 #headingThree {
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
+}
+#collapseThree > .card-body {
+    /* border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; */
 }
 .conclusionSection {
     padding: 20px;
